@@ -1,0 +1,611 @@
+/***********
+APPLY TO ALL
+***********/
+/* general body */
+
+/*Sets the font of the general body for the entire website */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+ color: #2f4f4f;
+ font-family: 'Zilla Slab', sans-serif;
+ font-size: 2em;
+}
+
+#logo {
+  width: 75px;
+ height: 75px;
+ margin-left: 1%;
+ float: left;
+}
+
+#homeicon {
+ width: 75px;
+ height:75px;
+ margin-right: 1.05%;
+ float: right;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float:right;
+    height: 50px;
+    width: 50px;
+    margin:-13% 5% 1%;
+}
+.dropdown-1 {
+   text-align:center;
+   margin:-2% 0;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width:80%;
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+  font-size: 1em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-1:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   /* background-image:linear-gradient(20); */
+}
+/** MAIN Body of the home **/
+
+.wrapper {
+ margin:0.5% auto;
+ text-align: left;
+ background: 	rgba(255,255,255, 0.7);
+ padding-bottom:2.5%;
+}
+
+.wrapper p {
+  margin:2.5% 0%;
+}
+
+
+
+
+p {
+ max-width: 100%;
+ padding:0 2%;
+}
+
+#mission li{
+ list-style: none;
+ max-width: 80%;
+ margin: 3% auto;
+}
+
+#thank-you li{
+ list-style: none;
+ max-width: 80%;
+ margin: 1% auto;
+ text-align: right;
+}
+
+/** Background formatting for Jay Bhatt & globetrotter **/
+
+
+
+/* Makes all images fit within their containers */
+
+img {
+ max-width:100%;
+}
+
+
+/* Sets the background image of the header */
+
+ header {
+ margin: 0;
+ padding: 5% 0 2.5%;
+ background: black url('../pics/background.png');
+ background-size: cover;
+}
+
+.header-food {
+  margin: 0;
+  padding: 5% 0 2.5%;
+  background: white url('../pics/pano-bg.jpeg');
+  background-size: cover;
+}
+
+.steps ol li {
+  margin: 1% 0%;
+}
+
+.steps ul li {
+  margin: 1% 0%;
+}
+
+/* Copied and pasted from the internet */
+
+.image {
+  width: 250px;
+  float: left;
+  margin: 20px;
+}
+body {
+  line-height: 1.4;
+}
+
+
+p {
+  margin: 0;
+}
+.performance-facts {
+  border: 1px solid black;
+  margin: 20px;
+  float: left;
+/*  width: 280px; */
+  padding: 0.5rem;
+  table {
+    border-collapse: collapse;
+  }
+}
+.performance-facts__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+.performance-facts__header {
+  border-bottom: 10px solid black;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+.performance-facts__table {
+  width: 100%;
+  thead tr {
+    th, td {
+      border: 0;
+    }
+  }
+  th, td {
+    font-weight: normal;
+    text-align: left;
+    padding: 0.25rem 0;
+    border-top: 1px solid black;
+    white-space: nowrap;
+  }
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+  .blank-cell {
+    width: 1rem;
+    border-top: 0;
+  }
+  .thick-row {
+    th, td {
+      border-top-width: 5px;
+    }
+  }
+}
+
+.performance-facts__table--small {
+  @extend .performance-facts__table;
+  border-bottom: 1px solid #999;
+  margin: 0 0 0.5rem 0;
+  thead {
+    tr {
+      border-bottom: 1px solid black;
+    }
+  }
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th, td {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.performance-facts__table--grid {
+  @extend .performance-facts__table;
+  margin: 0 0 0.5rem 0;
+  td {
+    &:last-child {
+      text-align: left;
+      &::before {
+        content: "•";
+        font-weight: bold;
+        margin: 0 0.25rem 0 0;
+      }
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
+.thick-end {
+  border-bottom: 10px solid black;
+}
+.thin-end {
+  border-bottom: 1px solid black;
+}
+
+/* END OF COPY AND PASTE */
+
+
+/**** TEXT EDITING (body, headers, paragraphs, etc.) ***/
+
+/** ALL LINK ELEMENTS **/
+
+a {
+  text-decoration:none;
+  color: grey;
+}
+
+/** HEADERS **/
+
+#main-header ul li {
+  list-style-type: none;
+  display: inline-block;
+  color: black;
+}
+
+#actual-homepage {
+  font-size: 2em;
+
+}
+
+
+/* Makes the h1 element bigger and more promenient */
+h1 {
+  color: black;
+  font-family: 'Allerta Stencil', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  text-align: center;
+}
+
+#tag-line {
+  font-style: oblique;
+  color: #800020;
+}
+
+#onthispage {
+  text-decoration: line-through;
+  color: #800020;
+}
+
+/* Makes the h2 element smaller than the h1 element */
+
+/* Globetrotter */
+/*Continent */
+
+h2 {
+ font-family: 'Allerta Stencil', sans-serif;
+ color: black;
+ font-size: 1.7em;
+ text-align: center;
+}
+
+/*clears the headline & paragraphs */
+
+/* Places */
+/*Descriptions for place
+
+h3, p {
+ clear:both;
+}
+
+*/
+
+h3 {
+ text-align:center;
+ font-size: 1.5em;
+ margin: 1% auto;
+ clear: both;
+}
+
+/* "Worth a visit" */
+
+h4 {
+ clear:both;
+ margin: 1% auto;
+ text-align:center;
+ font-size: 1.5em;
+}
+#mt {
+ margin: 2.5% auto;
+ font-size: 2em;
+}
+
+/***** Navigations  ******/
+
+/*Makes the main-nav and secnd-nav transparent to make it better visible with the background */
+/*Changes the font and puts the text in the center
+
+nav {
+ background: 	rgba(255,255,255, 0.7);
+ font-family: 'Allerta Stencil', sans-serif;
+ font-family: 'Pacifico', cursive;
+ font-size: 1.25em;
+ text-align: center;
+}
+
+Keeps the links original color even after they are visited */
+
+nav a:visited {
+ color: black;
+}
+
+/*Makes the navigation text bolder and adds more distance between the options */
+
+nav a {
+  font-weight: bolder;
+  padding: 10%;
+  color: black;
+}
+
+/* Setting the font for continent navigation */
+
+#second-nav {
+font-family: 'Allerta Stencil', sans-serif;
+text-align: center;
+visibility: hidden;
+}
+
+#second-nav-other {
+font-family: 'Allerta Stencil', sans-serif;
+font-size: 1.5em;
+text-align: center;
+}
+
+#second-nav li {
+ padding: 0% 1%;
+}
+/*The strike through formating for selected & hovering */
+nav a.selected, nav a:hover {
+ text-decoration:line-through;
+}
+/*Gets rid of the list style and adds additional margin to the navigation menu */
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding:0;
+}
+/* Acutally displays the menu in a horizontal menu! */
+nav li{
+  display: inline-block;
+}
+
+
+
+/***********
+Home page alone
+***********/
+
+/*Prevent the home page header from showing the background on the header since its the body background*/
+
+#index-header {
+ background: transparent;
+}
+
+/*Background for the main page*/
+
+#main-bg {
+ background: black url('../pics/IMG_0353-min.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+#main-bgfood {
+ background: white url('../pics/pano-bg.jpeg');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+/***********
+Footer alone
+***********/
+
+/*Makes the footer font size as well as puts the footer in center */
+
+footer {
+ font-size: 0.5em;
+ text-align: center;
+ padding: 50px 0 0;
+ color: #ddd;
+ max-width: 100px;
+ margin:0 auto;
+ clear: both;
+}
+
+.icons {
+ width:20px;
+ height: 20px;
+ margin:0 5px;
+}
+
+/***********
+ALL CONTINENTS
+***********/
+
+/* Creating a quick short cut on the right and description on the left */
+
+.intro-c {
+  max-width: 65%;
+  float: left;
+  margin-right: 2.5%;
+  margin-bottom: 5%;
+}
+
+#south-a {
+  max-width: 100%;
+  margin-top: 1.5%;
+}
+
+
+.scut {
+ max-width: 30%;
+ float:right;
+ margin-right:2.5%
+}
+
+.scut a {
+ color: black;
+}
+
+.scut a:hover {
+ color: red;
+}
+
+.scut li {
+ margin: 20% 0 0;
+ border: 1px solid grey;
+ border-top: 10px solid black;
+}
+
+
+
+
+
+
+/* Sets up the max-width */
+
+.continents {
+ max-width: 100%;
+ margin:0 auto;
+ text-align: center;
+}
+
+/*Eliminates list style on all ul */
+
+.continents ul{
+ list-style: none;
+ margin: 2% auto;
+}
+
+/*Adds spacing between each location */
+
+.container li{
+  margin: 10% 2.5%;
+  text-align: left;
+}
+
+ul {
+  padding:0;
+}
+
+/*Adds the color to the visited country */
+
+.pagetitle {
+ display: block;
+ color: #800020;
+ text-align: center;
+}
+
+
+/* Separates the pictures into quadrants and not in a list time for all pages */
+
+.gallery li{
+  margin: 1.5% 1.5% 1.5%;
+  text-align: center;
+}
+
+.gallery {
+  list-style: none;
+}
+
+
+/*Description and Key locations */
+
+.key_locations li {
+ margin: 0.5%;
+ text-align: center;
+ clear: both;
+}
+
+ol li {
+  margin:3% 0.5%;
+  text-align: left;
+  clear:both;
+}
+
+/***********
+North America
+***********/
+
+#franklin-list li {
+  margin:0%;
+  padding: 0% 2%;
+}
+
+/* Sets up the max-width */
+
+/*Eliminates list style on all ul */
+
+/***********
+Africa
+***********/
+
+/***********
+South America
+***********/
+
+/***********
+Asia
+***********/
+
+/***********
+Antarctica
+***********/
+
+/***********
+Australia
+***********/
+
+/* FONTS
+font-family: 'Pacifico', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Press Start 2P', cursive;
+
+*/
